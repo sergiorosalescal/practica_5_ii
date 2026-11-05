@@ -1,6 +1,6 @@
 # Práctica 5 - Realidad Virtual con Google Cardboard en Unity
 
-**Autor:** Sergio Rosales (alu0101635590@ull.edu.es)
+**Autor:** Sergio Rosales Calzadilla (alu0101635590@ull.edu.es)
 
 Esta práctica de la asignatura **Interfaces Inteligentes** se centra en el desarrollo de una aplicación de **realidad virtual para Android** con el **Cardboard XR Plugin** de Google. El jugador se mueve por un terreno y se relaciona con la escena **únicamente con la mirada**: desde la cámara se lanza un rayo (`Physics.Raycast`) en la dirección en la que mira, y según el objeto que toca, el jugador avanza, recoge monedas o activa un cofre que atrae a las monedas que quedan. Para comunicar los objetos se reutiliza el **patrón observador** (delegados y eventos) de la práctica anterior.
 
