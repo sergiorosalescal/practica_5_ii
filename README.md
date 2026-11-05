@@ -49,8 +49,6 @@ Se crea el proyecto y se configura el plugin de Cardboard para Android, siguiend
 - En *Player Settings* se usa **IL2CPP** con arquitectura **ARM64**, las APIs gráficas **Vulkan** y **OpenGLES3**, la orientación **Landscape Left** y el *Minimum API Level* 26. Además se activan las plantillas personalizadas de Gradle (`mainTemplate.gradle` y `gradleTemplate.properties`) con las dependencias que indica la guía.
 - Se importa la escena de ejemplo **HelloCardboard** y se prueba en un **Google Pixel 8**.
 
-Al generar el primer APK solo se veía el cielo por defecto de Unity. El motivo era que en *Build Profiles > Scene List* la primera escena (índice 0) era `SampleScene`, la escena vacía de la plantilla, y Android siempre arranca la escena de índice 0. Al dejar en primera posición la escena de Cardboard, la aplicación se ve correctamente en modo realidad virtual, con la pantalla dividida para cada ojo.
-
 ### Ejercicio 2
 
 > Crea una escena con Cardboard que tenga objetos que al llegar el jugador a ellos los recolecte con la vista. El jugador se puede desplazar con un mando o con la vista. La escena debe contener un terreno y objetos de algún paquete de la Asset Store.
